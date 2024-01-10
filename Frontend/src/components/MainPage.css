@@ -1,0 +1,142 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #323343;
+}
+  
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #323343; /* Add the background color */
+  padding: 15px; /* Add some padding for better spacing */
+}
+
+.logo {
+  margin-top: 10px;
+  margin-right: auto;
+}
+
+.logo img {
+  height: 40px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.search-bar {
+  flex-grow: 0.3;
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 60px;
+}
+
+input {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid red;
+  border-radius: 4px;
+  background-color: #323343;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 600px;
+  align-items: center;
+  background-color: #323343; /* Buttons section background color */
+}
+
+.buttons button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: darkred;
+}
+
+/* Reset margin and padding for buttons */
+.buttons button:first-child {
+  margin-left: 0;
+}
+
+.buttons button:last-child {
+  margin-right: 0;
+}
+  
+
+  .image-container {
+    width: 100%;
+    margin-top: 20px;
+    position: relative; /* Make the container a positioning context */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 78vh;
+    object-fit: cover; /* Ensure the image covers the container */
+    position: absolute; /* Position the image absolutely within the container */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Send the image to the background */
+  }
+
+  .food-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    z-index: 1;
+  }
+  
+  .food-item {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px; /* Adjust the padding for smaller cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Set the position relative for absolute positioning of the price */
+    margin-top: 40px;
+    margin-left: 40px; /* Add margin to the left */
+    margin-right: 40px; /* Add margin to the right */
+  }
+  
+  .food-details {
+    flex: 1;
+  }
+  
+  .food-details h3 {
+    margin-bottom: 10px;
+  }
+  
+  .food-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+  }
+
+  .food-price {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    color: red;
+    margin: 10px;
+  }
